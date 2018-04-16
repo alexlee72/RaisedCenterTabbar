@@ -32,13 +32,56 @@ class TabBarTopBorderView: UIView {
     }
 }
 
-class TabBarViewController: UITabBarController {
+extension UIDevice {
+    var modelName: String {
+        var identifier = ""
+        if let simulatorModelIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
+            identifier = simulatorModelIdentifier
+            
+        } else {
+            var sysinfo = utsname()
+            uname(&sysinfo) // ignore return value
+            identifier = String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)!.trimmingCharacters(in: .controlCharacters)
+        }
+        
+        
+        switch identifier {
+        case "iPhone3,1", "iPhone3,2", "iPhone3,3", "iPhone4,1":
+            return "iPhone 4"
+            
+        case "iPhone5,1", "iPhone5,2", "iPhone5,3", "iPhone5,4", "iPhone6,1", "iPhone6,2", "iPhone8,4":
+            return "iPhone 5"
+            
+        case "iPhone7,2", "iPhone8,1", "iPhone9,1", "iPhone9,3", "iPhone10,1", "iPhone10,4":
+            return "iPhone 6,7,8"
+            
+        case "iPhone7,1", "iPhone8,2", "iPhone9,2", "iPhone9,4", "iPhone10,2", "iPhone10,5":
+            return "iPhone Plus"
+            
+        case "iPhone10,3", "iPhone10,6":
+            return "iPhone X"
+            
+        case "i386", "x86_64":
+            return "Simulator"
+        default:
+            return identifier
+        }
+    }
+}
 
-    private let tabBarHeight: CGFloat = 68.0
+class TabBarViewController: UITabBarController {
     
+    private var tabBarExtraHeight: CGFloat = 19
+    private var tabBarHeight: CGFloat {
+        if UIDevice.current.modelName == "iPhone X" {
+            return 83 + tabBarExtraHeight
+        } else {
+            return 49 + tabBarExtraHeight
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupUI()
         adjustTabBarItemsPosition()
     }
@@ -60,7 +103,7 @@ class TabBarViewController: UITabBarController {
         borderView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: tabBarHeight)
         borderView.backgroundColor = UIColor.white
         tabBar.addSubview(borderView)
-    
+        
         makeMaskTopAreaOfTabBar()
     }
     
@@ -112,3 +155,4 @@ class TabBarViewController: UITabBarController {
         tabBar.layer.masksToBounds = true
     }
 }
+
