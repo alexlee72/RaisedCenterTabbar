@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BX9-CV-SE8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New View Controller-->
+        <scene sceneID="Ohc-NB-jJ8">
+            <objects>
+                <viewController id="axt-dC-nPf" customClass="NewViewController" customModule="RaisedCenterTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFe-KJ-sW8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkE-i8-E2K">
+                                <rect key="frame" x="170" y="70" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93901145458221436" green="0.91721372079699182" blue="0.70586358365593538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hkE-i8-E2K" firstAttribute="centerX" secondItem="3zg-o1-1rF" secondAttribute="centerX" id="NTF-jb-iT4"/>
+                            <constraint firstItem="hkE-i8-E2K" firstAttribute="top" secondItem="3zg-o1-1rF" secondAttribute="top" constant="50" id="Y6x-fM-Kd5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3zg-o1-1rF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="new-100" id="Xqx-FU-8Bh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amt-hZ-KGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="690"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="8NB-UE-1MB">
+            <objects>
+                <viewController id="3vF-E9-NW6" customClass="ScanViewController" customModule="RaisedCenterTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gHB-pc-BVy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-Nd-3SK">
+                                <rect key="frame" x="168" y="70" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86717439202314373" green="0.84968519642390561" blue="0.93901145458221436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MqF-Nd-3SK" firstAttribute="centerX" secondItem="nUA-Ay-MgS" secondAttribute="centerX" id="NCJ-sx-tvu"/>
+                            <constraint firstItem="MqF-Nd-3SK" firstAttribute="top" secondItem="nUA-Ay-MgS" secondAttribute="top" constant="50" id="rcy-Ed-Akp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nUA-Ay-MgS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="scan" id="D3V-ze-zGn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eb-8X-iGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="1361"/>
+        </scene>
+        <!--Work Orders-->
+        <scene sceneID="0UO-1o-BPA">
+            <objects>
+                <viewController id="ich-Mv-uhv" customClass="WorkOrdersViewController" customModule="RaisedCenterTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5hv-XW-tfi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-iV-170">
+                                <rect key="frame" x="139" y="70" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77190886022005978" green="0.93901145458221436" blue="0.8685437632057883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KWG-iV-170" firstAttribute="top" secondItem="lHu-Tf-b1J" secondAttribute="top" constant="50" id="fGy-Fg-c4D"/>
+                            <constraint firstItem="KWG-iV-170" firstAttribute="centerX" secondItem="lHu-Tf-b1J" secondAttribute="centerX" id="vM1-Uf-39G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lHu-Tf-b1J"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Work Orders" image="work-order" id="FUh-0Q-xh6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6l-Cd-lRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="25"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="17h-1W-Bg4">
+            <objects>
+                <tabBarController id="BX9-CV-SE8" customClass="TabBarViewController" customModule="RaisedCenterTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" tag="-4" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ZB-69-Wo6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ich-Mv-uhv" kind="relationship" relationship="viewControllers" id="Qbb-Je-ocl"/>
+                        <segue destination="axt-dC-nPf" kind="relationship" relationship="viewControllers" id="JcQ-ru-Gyc"/>
+                        <segue destination="3vF-E9-NW6" kind="relationship" relationship="viewControllers" id="nay-42-tVj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaO-62-GXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="new-100" width="50" height="50"/>
+        <image name="scan" width="34" height="28"/>
+        <image name="work-order" width="25" height="29"/>
+    </resources>
+</document>
