@@ -38,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="513" y="690"/>
         </scene>
-        <!--Scan-->
+        <!--Barcode-->
         <scene sceneID="8NB-UE-1MB">
             <objects>
                 <viewController id="3vF-E9-NW6" customClass="ScanViewController" customModule="RaisedCenterTabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,8 +46,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-Nd-3SK">
-                                <rect key="frame" x="168" y="70" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-Nd-3SK">
+                                <rect key="frame" x="155.5" y="70" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,14 +60,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nUA-Ay-MgS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scan" image="scan" id="D3V-ze-zGn"/>
+                    <tabBarItem key="tabBarItem" title="Barcode" image="scan" id="D3V-ze-zGn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eb-8X-iGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-87" y="1361"/>
         </scene>
-        <!--Work Orders-->
+        <!--Notes-->
         <scene sceneID="0UO-1o-BPA">
             <objects>
                 <viewController id="ich-Mv-uhv" customClass="WorkOrdersViewController" customModule="RaisedCenterTabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,21 +75,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-iV-170">
-                                <rect key="frame" x="139" y="70" width="97" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-iV-170">
+                                <rect key="frame" x="164.5" y="70" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.77190886022005978" green="0.93901145458221436" blue="0.8685437632057883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94511175160000005" green="0.94509410859999998" blue="0.94510608910000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="KWG-iV-170" firstAttribute="top" secondItem="lHu-Tf-b1J" secondAttribute="top" constant="50" id="fGy-Fg-c4D"/>
                             <constraint firstItem="KWG-iV-170" firstAttribute="centerX" secondItem="lHu-Tf-b1J" secondAttribute="centerX" id="vM1-Uf-39G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lHu-Tf-b1J"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Work Orders" image="work-order" id="FUh-0Q-xh6"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="work-order" id="FUh-0Q-xh6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6l-Cd-lRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
