@@ -1,5 +1,5 @@
 //
-//  NewViewController.swift
+//  NotesViewController.swift
 //  RaisedCenterTabBar
 //
 //  Created by Alex Lee on 2018-04-15.
@@ -8,4 +8,4 @@
 
 import UIKit
 
-class NewViewController: UIViewController {}
+class NotesViewController: UIViewController {}

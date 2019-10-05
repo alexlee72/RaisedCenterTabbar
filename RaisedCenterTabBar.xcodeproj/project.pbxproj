@@ -12,9 +12,9 @@
 		FAC5471E20840C12006A35DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5471D20840C12006A35DB /* Assets.xcassets */; };
 		FAC5472120840C12006A35DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC5471F20840C12006A35DB /* LaunchScreen.storyboard */; };
 		FAC5472920840C98006A35DB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5472820840C98006A35DB /* TabBarViewController.swift */; };
-		FAC5472B20840ED2006A35DB /* WorkOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5472A20840ED2006A35DB /* WorkOrdersViewController.swift */; };
+		FAC5472B20840ED2006A35DB /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5472A20840ED2006A35DB /* NotesViewController.swift */; };
 		FAC5472D20840EE6006A35DB /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5472C20840EE6006A35DB /* NewViewController.swift */; };
-		FAC5472F20840EF1006A35DB /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5472E20840EF1006A35DB /* ScanViewController.swift */; };
+		FAC5472F20840EF1006A35DB /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5472E20840EF1006A35DB /* BarcodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		FAC5472020840C12006A35DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC5472220840C12006A35DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC5472820840C98006A35DB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		FAC5472A20840ED2006A35DB /* WorkOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrdersViewController.swift; sourceTree = "<group>"; };
+		FAC5472A20840ED2006A35DB /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		FAC5472C20840EE6006A35DB /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
-		FAC5472E20840EF1006A35DB /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		FAC5472E20840EF1006A35DB /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			children = (
 				FAC5472C20840EE6006A35DB /* NewViewController.swift */,
 				FAC5472820840C98006A35DB /* TabBarViewController.swift */,
-				FAC5472A20840ED2006A35DB /* WorkOrdersViewController.swift */,
-				FAC5472E20840EF1006A35DB /* ScanViewController.swift */,
+				FAC5472A20840ED2006A35DB /* NotesViewController.swift */,
+				FAC5472E20840EF1006A35DB /* BarcodeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -160,9 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC5472B20840ED2006A35DB /* WorkOrdersViewController.swift in Sources */,
+				FAC5472B20840ED2006A35DB /* NotesViewController.swift in Sources */,
 				FAC5472920840C98006A35DB /* TabBarViewController.swift in Sources */,
-				FAC5472F20840EF1006A35DB /* ScanViewController.swift in Sources */,
+				FAC5472F20840EF1006A35DB /* BarcodeViewController.swift in Sources */,
 				FAC5471720840C10006A35DB /* AppDelegate.swift in Sources */,
 				FAC5472D20840EE6006A35DB /* NewViewController.swift in Sources */,
 			);
